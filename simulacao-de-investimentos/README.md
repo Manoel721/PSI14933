@@ -1,0 +1,19 @@
+# simulacao-de-investimentos
+
+Instruções:
+
+URL onde estão os arquivos:
+
+https://github.com/Manoel721/simulacao-de-investimentos
+
+
+
+1) Para rodar os arquivos docker-compose.yml e Dockerfile.jvm, favor colocá-los no mesmo nível da subpasta simulacao-de-investimentos.
+
+2) Executar o arquivo docker-compose.yml para gerar a imagem.
+
+
+
+A documentação está disponível em http://localhost:8080/q/dev-ui/quarkus-smallrye-openapi/swagger-ui 
+
+ 
