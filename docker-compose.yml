@@ -1,0 +1,29 @@
+services:
+  quarkus-app:
+    build:
+      context: .
+      dockerfile: Dockerfile.jvm
+    container_name: quarkus-app
+    ports:
+      - "8080:80"
+    environment:
+      QUARKUS_DATASOURCE_JDBC_URL: jdbc:sqlserver://db:1433;databaseName=TESTE
+      QUARKUS_DATASOURCE_USERNAME: sa
+      QUARKUS_DATASOURCE_PASSWORD: 1234
+    depends_on:
+      - db
+
+  db:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: sqlserver-db
+    ports:
+      - "1433:1433"
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: "1234"
+      MSSQL_PID: "Developer"
+    volumes:
+      - sqlserver_data:/var/opt/mssql
+
+volumes:
+  sqlserver_data:
