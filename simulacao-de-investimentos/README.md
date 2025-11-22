@@ -14,7 +14,8 @@ https://github.com/Manoel721/PSI14933
 
 3) Executar o arquivo docker-compose.yml para gerar a imagem.
 
-4) A supbasta scriptsbd cntém os arquivos .sql para o banco de dados.
+4) A supbasta scriptsbd contém os arquivos .sql para o banco de dados.
 
 A documentação está disponível em http://localhost:8080/q/dev-ui/quarkus-smallrye-openapi/swagger-ui 
+
 
